@@ -1,0 +1,15 @@
+﻿using BlogProjecet.Core.Entities;
+
+namespace BlogProject.Entity.Entities
+{
+    public class Image:EntityBase,IEntityBase
+    {
+
+        public string FileName { get; set; }
+
+        public string FileType { get; set; }
+
+        public ICollection<Article> Articles { get; set; }
+
+    }
+}
